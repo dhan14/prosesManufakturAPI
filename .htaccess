@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteRule ^karyawan?$ api/karyawan.php 
+RewriteRule ^karyawan/([0-9]+) api/karyawan.php?id_karyawan=$1 
+RewriteRule ^mesin?$ api/mesin.php 
+RewriteRule ^mesin/([0-9]+) api/mesin.php?id_mesin=$1 
+RewriteRule ^produk?$ api/produk.php 
+RewriteRule ^produk/([0-9]+) api/produk.php?id_produk=$1 
+RewriteRule ^prosedur?$ api/prosedur.php 
+RewriteRule ^prosedur/([0-9]+) api/prosedur.php?id_prosedur=$1 
+RewriteRule ^rawmaterial?$ api/rawmaterial.php 
+RewriteRule ^rawmaterial/([0-9]+) api/rawmaterial.php?id_rm=$1 
+RewriteRule ^warehouse?$ api/warehouse.php 
+RewriteRule ^warehouse/([0-9]+) api/warehouse.php?id_wh=$1

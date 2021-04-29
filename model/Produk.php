@@ -125,7 +125,7 @@ public function __construct($db){
 	}
 	function delete(){
 		$query = "DELETE FROM "
-		. $this->table_name ." WHERE id_wh = ?";
+		. $this->table_name ." WHERE id_produk = ?";
 		$stmt = $this->conn->prepare($query);
 		$stmt->bindParam(1, $this->id_wh);
 		if($stmt->execute()){
